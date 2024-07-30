@@ -1,0 +1,216 @@
+body{
+    background-color:#f3f3f3;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.navbar-brand>span{
+    font-size: 18px;
+    margin-left: 10px;
+ 
+}
+
+.btn-custom-resume{
+    background-color: #eea302; border: 1px solid black;
+}
+.btn-custom-projects{
+    background-color: #ff3b25; border: 1px solid black;
+}
+.btn-custom-contact{
+    background-color: #80d8da;  border: 1px solid black;
+}
+
+.btn-span{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.custom-img:hover,
+.custom-img:focus, 
+.custom-img:active {
+    box-shadow: 0px 0px 10px 5px darkgrey;
+}
+.custom-img{
+    width: 175px;
+    height: 160px;
+    transition: all 0.3s ;
+}
+
+
+.nav-link{
+    font-size: large;
+}
+.nav-item:nth-of-type(1){
+    border-right: 1px solid black;
+}
+.nav-item:nth-of-type(2){
+    border-right: 1px solid black;
+}
+
+.nav-link:hover{
+    color: red;
+    font-weight: 500;
+    transition: 0.3s ease ;
+    transform: translateY(-5px)
+}
+@keyframes bounce {
+    0%, 20%, 50%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.bounce1 {
+    display: inline-block;
+    animation: bounce 1.5s ease infinite;
+    animation-delay: 0s;
+}
+
+.bounce2 {
+    display: inline-block;
+    animation: bounce 1.5s ease infinite;
+    animation-delay: 0.3s; /* Delay to create the wave effect */
+}
+
+.bounce3 {
+    display: inline-block;
+    animation: bounce 1.5s ease infinite;
+    animation-delay: 0.6s; /* Delay to create the wave effect */
+}
+.navbar-brand i{
+   color: #eea302;
+   font-size: 30px;
+}
+.navbar-brand span.sansita-swashed-bold{
+    font-size: 50px; 
+    letter-spacing: 2px;
+}
+@media (max-width: 450px) {
+    .navbar-brand span.sansita-swashed-bold {
+        font-size: 40px;
+        letter-spacing: 0px;
+    }
+    .navbar-brand span.fw-normal {
+        font-size: 11px;
+    }
+   
+    .navbar-toggler-icon{
+        margin-top: 15px;
+    }
+    .custom-span span{
+        font-size: 70px;
+    }
+}
+
+@media (max-width:576px){
+    .custom-img{
+        width: 100px;
+        height: 90px;
+    } 
+    .btn-span{
+        font-size: 20px;
+        margin-left: -10px;
+    }
+    #imgsize{
+        margin-left: 30px;
+    }
+}
+
+
+/* ----------projects-------- */
+.custom-carousel-control .carousel-control-next-icon,
+.custom-carousel-control .carousel-control-prev-icon {
+   /* Change this to your desired color */
+    border-radius: 50%; /* Optional: Makes the background round if not already */
+    /* margin-right: 50px;
+    margin-left: 50px; */
+    width: 2.5rem; /* Adjust size as needed */
+    height: 2.5rem; /* Adjust size as needed */
+}
+
+.custom-carousel-control .carousel-control-next-icon::before,
+.custom-carousel-control .carousel-control-prev-icon::before {
+    content: ''; /* Required to remove default arrow icons */
+}
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out; /* Adjust speed here */
+}
+
+.sansita-swashed-bold {
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ------------------------- */
+.get{
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 500px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+@media (max-width: 450px) {
+    .contact-inputs {
+        width:300px; /* Adjust width as needed */
+        margin: 0 auto; /* Center the inputs */
+    }
+   
+
+}
+.contact-inputs:focus{
+    border: 2px solid #ff994f;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+.contact-form{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   gap:10px;
+}
+.contact-form>textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-form button{
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#ff994f,#fa6d86);
+}
+.btn-center {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
